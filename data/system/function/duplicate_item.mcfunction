@@ -3,6 +3,7 @@ item replace entity @p[gamemode=survival] armor.chest from entity @p[tag=beforeP
 item replace entity @p[gamemode=survival] armor.feet from entity @p[tag=beforePlayer] armor.feet
 item replace entity @p[gamemode=survival] armor.head from entity @p[tag=beforePlayer] armor.head
 item replace entity @p[gamemode=survival] armor.legs from entity @p[tag=beforePlayer] armor.legs
+item replace entity @p[gamemode=survival] weapon.offhand from entity @p[tag=beforePlayer] weapon.offhand
 item replace entity @p[gamemode=survival] container.0 from entity @p[tag=beforePlayer] container.0
 item replace entity @p[gamemode=survival] container.1 from entity @p[tag=beforePlayer] container.1
 item replace entity @p[gamemode=survival] container.2 from entity @p[tag=beforePlayer] container.2
