@@ -1,0 +1,6 @@
+gamerule sendCommandFeedback false
+gamerule commandBlockOutput false
+gamerule doImmediateRespawn true
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+gamerule doMobSpawning false

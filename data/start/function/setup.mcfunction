@@ -1,0 +1,8 @@
+scoreboard players set @e[type=block_display] gameTime 1200
+scoreboard players set @e[type=block_display] twenty 20
+scoreboard players set @e[type=block_display] activatedGame 1
+kill @a
+gamerule doImmediateRespawn false
+# gamemode spectator @r
+gamemode survival @p[gamemode=adventure]
+tag @p[gamemode=survival] add currentPlayer
