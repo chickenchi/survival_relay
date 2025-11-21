@@ -3,6 +3,7 @@ scoreboard players set @e[type=block_display] twenty 20
 scoreboard players set @e[type=block_display] activatedGame 1
 kill @a
 gamerule doImmediateRespawn false
-# gamemode spectator @r
-gamemode survival @p[gamemode=adventure]
+gamemode spectator @a
+gamemode survival @r
+tp @a[gamemode=spectator] @p[gamemode=survival]
 tag @p[gamemode=survival] add currentPlayer
