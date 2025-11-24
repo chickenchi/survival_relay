@@ -1,1 +1,1 @@
-scoreboard players set @e[type=block_display] gameTime 1200
+execute store result score @e[type=block_display] gameTime run random value 200..600

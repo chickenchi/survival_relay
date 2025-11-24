@@ -1,3 +1,4 @@
+item replace entity @p container.8 with written_book[written_book_content={title:"퀘스트",author:"",pages:[{"text":"퀘스트\n1. 다이아몬드 구하기(1세트)\n2. 양귀비 구하기(2세트)\n3. 알리움 구하기(2세트)\n4. 레벨 20까지 올리기\n5. 석영 블록 구하기(30개)"}]}] 1
 scoreboard players remove @e[type=block_display] gameTime 1
 execute store result score @e[type=block_display,limit=1] gameTimeBySecond run scoreboard players get @e[type=block_display,limit=1] gameTime
 scoreboard players operation @e[type=block_display] gameTimeBySecond /= @e[type=block_display] twenty

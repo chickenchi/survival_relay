@@ -1,0 +1,10 @@
+scoreboard objectives add health dummy
+scoreboard objectives add syncHealth dummy
+scoreboard objectives add isSyncingHealth dummy
+scoreboard objectives add playerCount dummy
+scoreboard objectives add playedPlayerCount dummy
+scoreboard objectives add quest1 dummy
+scoreboard objectives add quest2 dummy
+scoreboard objectives add quest3 dummy
+scoreboard objectives add quest4 dummy
+scoreboard objectives add quest5 dummy
