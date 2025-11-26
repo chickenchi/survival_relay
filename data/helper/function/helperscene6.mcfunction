@@ -1,2 +1,2 @@
-tellraw @a "<진행자> 원래 게임은 일단 해 보고 생각하는 맛이지 않겠어요?"
+tellraw @a "<진행자> ... 장난이고, 규칙을 알려드릴게요."
 schedule function helper:helperscene7 4s

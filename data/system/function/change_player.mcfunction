@@ -1,13 +1,15 @@
 tag @p[tag=currentPlayer] add beforePlayer
 gamemode spectator @a
-execute store result score @e[type=block_display,limit=1] playerCount run execute if entity @a
+execute store result score @e[type=block_display,limit=1] playerCount run execute if entity @a[scores={diedPlayer=0}]
 execute store result score @e[type=block_display,limit=1] playedPlayerCount run execute if entity @a[tag=playedPlayer]
 scoreboard players remove @e[type=block_display] playerCount 1
+execute if score @e[type=block_display,limit=1] playerCount matches 0 run function system:found_winner
 execute if score @e[type=block_display,limit=1] playerCount <= @e[type=block_display,limit=1] playedPlayerCount run gamemode survival @p[tag=!playedPlayer]
 execute if score @e[type=block_display,limit=1] playerCount <= @e[type=block_display,limit=1] playedPlayerCount run tag @a remove playedPlayer
-gamemode survival @r[tag=!currentPlayer, tag=!playedPlayer]
+gamemode survival @r[tag=!currentPlayer, tag=!playedPlayer, scores={diedPlayer=0}]
 tag @a[gamemode=spectator] remove currentPlayer
 tag @p[gamemode=survival] add currentPlayer
 function system:duplicate_item
 tp @p[tag=currentPlayer] @p[tag=beforePlayer,limit=1]
 tag @a remove beforePlayer
+execute as @p[tag=currentPlayer] at @s run effect give @s resistance 5 4

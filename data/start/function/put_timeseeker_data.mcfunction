@@ -1,4 +1,4 @@
-scoreboard players set @e[type=block_display] gameTime 600
+function system:reset_time
 scoreboard players set @e[type=block_display] twenty 20
 scoreboard players set @e[type=block_display] activatedGame 1
 scoreboard players set @e[type=block_display] quest1 0

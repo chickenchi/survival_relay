@@ -1,2 +1,2 @@
-tellraw @a "<진행자> 10초 후에 시작할게요! 카운트다운 준비!"
-schedule function helper:helpercountdown10 4s
+tellraw @a "<진행자> 3. 이 미션을 먼저 클리어한 사람이 우승자가 됩니다!"
+schedule function helper:helperscene10 4s

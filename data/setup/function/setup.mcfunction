@@ -1,2 +1,3 @@
-function reset:reset
-schedule function setup:setting 2
+scoreboard players set @e[type=block_display] activatedGame 0
+gamemode spectator @a
+schedule function setup:rebooting 2
